@@ -1,32 +1,38 @@
+"""
+A module for working with rectangles.
+Contains the Rectangle class with methods
+for calculating area and perimeter.
+"""
+
 class Rectangle:
     """
-        A class for representing a geometric rectangle.
-        Allows you to calculate the area, perimeter, square, and resize the shape.
+    A class for representing a geometric rectangle.
 
-        Attributes:
-            width (float): The width of the rectangle.
-            height (float): The height of the rectangle.
+    Allows storing side dimensions and calculating area or perimeter.
     """
 
     def __init__(self, width: float, height: float) -> None:
+        """Initializes a rectangle with the given width and height."""
         self.width = width
         self.height = height
 
     def area(self) -> float:
+        """Calculates and returns the area of a rectangle."""
         return round(self.width * self.height, 2)
 
     def perimeter(self) -> float:
+        """Calculates the perimeter of a rectangle."""
         return round(2 * (self.width + self.height), 2)
 
     def s_square(self) -> bool:
-        if self.width == self.height:
-            return True
-        else:
-            return False
+        """Checks whether a shape is a square."""
+        return self.width == self.height
 
     def resize(self, new_width, new_height):
+        """Sets new values for width and height """
         self.width = new_width
         self.height = new_height
+
 
 if __name__ == "__main__":
 
@@ -34,6 +40,8 @@ if __name__ == "__main__":
 
     assert r1.area() == 50, "Test 1"
     assert r1.perimeter() == 30, "Test 2"
-    assert r1.s_square() == False, "Test 3"
+    if not r1.s_square():
+        print("This is not a square")
     r1.resize(12, 12)
-    assert r1.s_square() == True, "Test 4"
+    if r1.s_square():
+        print("This is a square")

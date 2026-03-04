@@ -1,4 +1,12 @@
 class Rectangle:
+    """
+        A class for representing a geometric rectangle.
+        Allows you to calculate the area, perimeter, square, and resize the shape.
+
+        Attributes:
+            width (float): The width of the rectangle.
+            height (float): The height of the rectangle.
+    """
 
     def __init__(self, width: float, height: float) -> None:
         self.width = width

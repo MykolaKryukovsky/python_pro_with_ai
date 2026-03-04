@@ -1,7 +1,15 @@
 import math
 
 def calculate_circle_area(radius: float) -> float:
-         return round(math.pi * radius ** 2, 2)
+    """
+        Calculates the area of python3 example_4.pya circle given its radius.
+        Uses the formula: S = π * r²
+        Args:
+        radius (float): The radius of the circle. Must be a non-negative number.
+        Returns:
+        float: The area of the circle.
+    """
+    return round(math.pi * radius ** 2, 2)
 
 while True:
     try:

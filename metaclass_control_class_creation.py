@@ -15,7 +15,7 @@ class SingletonMeta(type):
             type(cls)._instances[cls] = instance
         return type(cls)._instances[cls]
 
-
+# pylint: disable=too-few-public-methods
 class Singleton(metaclass=SingletonMeta):
     """Singleton class."""
 

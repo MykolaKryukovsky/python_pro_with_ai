@@ -3,6 +3,7 @@ A module for object analysis and introspection demonstration.
 """
 from typing import Any
 
+# pylint: disable=too-few-public-methods
 class MyClass:
     """
     A class for demonstrating metaprogramming and introspection.

@@ -1,13 +1,14 @@
 """
 A module for analyzing inheritance of classes and their methods.
 """
+# pylint: disable=too-few-public-methods
 class Parent:
     """Base class to demonstrate inheritance."""
 
     def parent_method(self) -> None:
         """Base class method."""
 
-
+# pylint: disable=too-few-public-methods
 class Child(Parent):
     """Child class of base class Parent."""
 

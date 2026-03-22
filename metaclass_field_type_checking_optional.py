@@ -27,7 +27,7 @@ class TypeCheckedMeta(type):
         cls.__setattr__ = custom_setattr
         return cls
 
-
+# pylint: disable=too-few-public-methods
 class Person(metaclass=TypeCheckedMeta):
     """Class with type validation."""
     name: str = ""

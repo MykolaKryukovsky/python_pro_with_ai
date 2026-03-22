@@ -32,7 +32,7 @@ class LoggingMeta(type):
 
         return super().__new__(mcs, name, bases, dct)
 
-
+# pylint: disable=too-few-public-methods
 class MyClass(metaclass=LoggingMeta):
     """
     A sample class that demonstrates automatic logging via LoggingMeta.

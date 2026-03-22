@@ -1,7 +1,7 @@
 """
 Module for limiting the number of class attributes using a metaclass.
 """
-from typing import Any, Type
+from typing import Type
 
 class LimitedAttributesMeta(type):
     """A metaclass that limits the number of custom attributes in a class."""
@@ -18,7 +18,7 @@ class LimitedAttributesMeta(type):
         return super().__new__(mcs, name, bases, dct)
 
 
-
+# pylint: disable=too-few-public-methods
 class LimitedClass(metaclass=LimitedAttributesMeta):
     """An example of a class that obeys the rules of LimitedAttributesMeta."""
     attr1 = 1

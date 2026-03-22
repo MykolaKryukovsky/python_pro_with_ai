@@ -4,6 +4,7 @@ A module for implementing the Proxy pattern.
 import logging
 from typing import Any
 
+# pylint: disable=too-few-public-methods
 class MyClass:
     """A simple class for demonstration."""
 
@@ -17,7 +18,7 @@ class MyClass:
         """Static greeting method."""
         return f"Hello, {name}!"
 
-
+# pylint: disable=too-few-public-methods
 class Proxy:
     """Proxy class for call interception."""
 

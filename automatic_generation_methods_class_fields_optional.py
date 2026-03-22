@@ -26,7 +26,7 @@ class AutoMethodMeta(type):
 
         return super().__new__(mcs, name, bases, dct)
 
-
+# pylint: disable=too-few-public-methods
 class Person(metaclass=AutoMethodMeta):
     """
     A class that automatically receives getter and setter methods for its fields.
@@ -37,9 +37,11 @@ class Person(metaclass=AutoMethodMeta):
 
 if __name__ == "__main__":
 
-    p = Person()
+    p: Any = Person()
 
+    # pylint: disable=no-member
     print(f"Name: {p.get_name()}")
 
     p.set_age(31)
+    # pylint: disable=no-member
     print(f"New age: {p.get_age()}")

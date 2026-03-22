@@ -8,10 +8,12 @@ class Calculator:
 
     @staticmethod
     def add(a, b):
+        """returns the sum of two numbers"""
         return a + b
 
     @staticmethod
     def subtract(a, b):
+        """returns the difference of two numbers"""
         return a - b
 
 
@@ -31,6 +33,7 @@ def call_function(obj1: Any, method_name: str, *args: Any) -> Any :
 
     except AttributeError:
         print(f"❌ Error: Method '{method_name}' not found in object.")
+        return None
 
 
 

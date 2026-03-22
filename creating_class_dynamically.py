@@ -3,12 +3,12 @@ A module to demonstrate dynamic class creation.
 """
 from typing import Any, Dict, Callable, Type
 
-def say_hello(self) -> str:
+def say_hello(_self) -> str:
     """Returns a greeting."""
     return "Hello!"
 
 
-def say_goodbye(self) -> str:
+def say_goodbye(_self) -> str:
     """Returns a farewell."""
     return "Goodbye!"
 

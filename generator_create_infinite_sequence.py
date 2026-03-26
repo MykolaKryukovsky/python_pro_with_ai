@@ -2,8 +2,8 @@
 Module for generating infinite even numbers and saving them to a file.
 Demonstrates generators and context managers.
 """
-
 from typing import Generator
+
 
 def infinite_even_generator() -> Generator[int, None, None]:
     """Infinite generator that yields even numbers starting from 0."""
@@ -40,7 +40,6 @@ def save_even_numbers(file_path: str, limit: int = 100) -> None:
 
     except OSError as err:
         print(f"File error: {err}")
-
 
 
 if __name__ == "__main__":

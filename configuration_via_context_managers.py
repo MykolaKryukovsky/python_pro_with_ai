@@ -1,5 +1,4 @@
 """Module for managing JSON configuration files using a context manager."""
-
 import json
 import os
 from typing import Dict, Any
@@ -34,8 +33,6 @@ class ConfigManager:
                 print(f"Error saving config: {err}")
         else:
             print(f"Changes not saved due to error: {exc_val}")
-
-
 
 
 if __name__ == "__main__":

@@ -1,5 +1,4 @@
 """Module for memory-efficient running average calculation using generators."""
-
 from typing import Generator
 
 
@@ -31,8 +30,6 @@ def running_average_generator(file_path: str) -> Generator[float, None, None]:
 
     except OSError as err:
         print(f"File error: {err}")
-
-
 
 
 if __name__ == "__main__":

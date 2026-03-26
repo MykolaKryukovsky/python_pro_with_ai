@@ -1,6 +1,7 @@
 """Module for generating unique UUID4 identifiers using an iterator."""
 import uuid
 
+
 class UniqueIDGenerator:
     """An iterator that infinitely generates unique UUID4 identifiers."""
 
@@ -22,8 +23,6 @@ class UniqueIDGenerator:
         self.count += 1
 
         return str(uuid.uuid4())
-
-
 
 
 if __name__ == '__main__':

@@ -1,7 +1,7 @@
 """Module for iterating over files in a directory and retrieving their metadata."""
-
 import os
 from typing import Iterator, Dict, Union
+
 
 class FileScanner:
     """Iterator that yields names and sizes of files in a specific folder."""
@@ -29,7 +29,6 @@ class FileScanner:
                     continue
 
         raise StopIteration
-
 
 
 if __name__ == "__main__":

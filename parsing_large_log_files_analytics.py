@@ -2,9 +2,9 @@
 Module for filtering web server logs based on HTTP status codes.
 Extracts 4XX and 5XX errors using memory-efficient generators.
 """
-
 import os
 from typing import Generator
+
 
 def error_log_generator(file_path: str) -> Generator[int, None, None]:
     """
@@ -46,7 +46,6 @@ def save_errors_to_file(input_log: str, output_log: str) -> None:
 
     except OSError as err:
         print(f"File processing error: {err}")
-
 
 
 if __name__ == "__main__":

@@ -1,8 +1,8 @@
 """Module for managing ZIP archives using a custom context manager."""
-
 import zipfile
 import os
 from typing import Optional, Type
+
 
 class ZipManager:
     """Context manager for creating and adding files to a ZIP archive."""
@@ -31,7 +31,6 @@ class ZipManager:
             print(f"Archive '{self.archive_path}' closed successfully.")
 
         return False
-
 
 
 if __name__ == "__main__":

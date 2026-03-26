@@ -59,6 +59,7 @@ class ReverseLineReader:
 
 
 if __name__ == '__main__':
+
     try:
         with ReverseLineReader('file123.txt', 4096) as reader:
             # Safe manual reading

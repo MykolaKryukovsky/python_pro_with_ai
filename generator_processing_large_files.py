@@ -2,7 +2,6 @@
 Module for memory-efficient text file filtering using generators.
 This script scans large files for a keyword and saves matches to a new file.
 """
-
 import os
 from typing import Generator
 

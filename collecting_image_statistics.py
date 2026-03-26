@@ -4,6 +4,7 @@ import csv
 
 from PIL import Image
 
+
 class ImageScanner:
     """Class for extracting metadata from images in a catalog."""
 
@@ -65,7 +66,6 @@ def run_metadata_collector(target_folder, output_csv):
         print(f"Access error: The file '{output_csv}' is open in another program.")
     except OSError as err:
         print(f"System error when working with file: {err}")
-
 
 
 if __name__ == "__main__":

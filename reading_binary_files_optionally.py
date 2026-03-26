@@ -1,5 +1,4 @@
 """Module for memory-efficient binary file reading in chunks."""
-
 import os
 
 
@@ -29,9 +28,6 @@ def process_binary_file(file_path: str, chunk_size: int = 1024) -> int:
     except OSError as err:
         print(f"Error occurred: {err}")
         return 0
-
-
-
 
 
 if __name__ == "__main__":

@@ -1,7 +1,7 @@
 """Module for safe file processing with automatic backup and rollback."""
-
 import os
 import shutil
+
 
 class SafeFileProcessor:
     """

@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<shop>
+    <product>
+        <name>Хліб</name>
+        <price>25</price>
+        <quantity>50</quantity>
+    </product>
+    <product>
+        <name>Молоко</name>
+        <price>40</price>
+        <quantity>55</quantity>
+    </product>
+    <product>
+        <name>Яблука</name>
+        <price>35</price>
+        <quantity>100</quantity>
+    </product>
+</shop>

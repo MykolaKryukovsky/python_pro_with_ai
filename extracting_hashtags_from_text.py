@@ -11,11 +11,11 @@ def find_hashtags(txt: str) -> list:
     characters or underscores.
     """
     pattern = re.compile(r"#\w+")
+
     return pattern.findall(txt)
 
 
 if __name__ == '__main__':
 
     TEXT = "Привіт! #python і #coding - це круто. #2026"
-
     print(find_hashtags(TEXT))

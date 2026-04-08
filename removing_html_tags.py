@@ -4,13 +4,14 @@ This module provides a utility to strip HTML tags from text content.
 import re
 
 
-def remove_html_tags(text):
+def remove_html_tags(text: str) -> str:
     """
     Remove all HTML tags from the provided string using regular expressions.
     It targets anything between '<' and '>' characters and replaces it with
     an empty string.
     """
     clean_text = re.sub(r'<[^>]*>', '', text)
+
     return clean_text
 
 

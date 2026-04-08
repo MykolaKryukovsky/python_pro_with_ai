@@ -15,6 +15,7 @@ def is_password_strong(password: str) -> bool:
     At least one special character (@, #, $, %, &, +, =, !).
     """
     pattern = r'^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@#$%&+=!]).{8,}$'
+
     return bool(re.match(pattern, password))
 
 

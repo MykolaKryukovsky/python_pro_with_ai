@@ -6,14 +6,14 @@ import re
 from collections import Counter
 
 
-def analyze_web_log(log_text):
+def analyze_web_log(log_text: str) -> Counter:
     """
-        Extracts valid IPv4 addresses from log text and counts their occurrences.
-        Args:
-            log_text: A string containing web server logs.
-        Returns:
-            A Counter object mapping IP addresses to the number of requests.
-        """
+    Extracts valid IPv4 addresses from log text and counts their occurrences.
+    Args:
+    log_text: A string containing web server logs.
+    Returns:
+    A Counter object mapping IP addresses to the number of requests.
+    """
     ip_pattern = r'\b\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}\b'
 
     all_ips = re.findall(ip_pattern, log_text)

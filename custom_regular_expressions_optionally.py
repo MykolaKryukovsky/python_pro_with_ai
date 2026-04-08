@@ -27,6 +27,7 @@ def extract_social_tags(txt: str) -> list:
 
     return re.findall(pattern, txt)
 
+
 def mask_card(txt: str) -> str:
     """
     Hide the first 12 digits of a credit card number, leaving only the last 4.
@@ -36,6 +37,7 @@ def mask_card(txt: str) -> str:
 
     return re.sub(pattern, r'****-****-****-\2', txt)
 
+
 def find_prices(txt: str) -> list:
     """
     Find prices with currency symbols or codes ($, USD, грн).
@@ -44,6 +46,7 @@ def find_prices(txt: str) -> list:
     pattern = r'(?:\$|USD|грн)\s?\d+(?:\.\d{2})?|\d+(?:\.\d{2})?\s?(?:\$|USD|грн)'
 
     return re.findall(pattern, txt)
+
 
 def find_words_by_length(txt: str, length: int) -> list:
     """

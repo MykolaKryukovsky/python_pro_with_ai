@@ -4,14 +4,14 @@ This module provides a utility to remove URLs from text.
 import re
 
 
-def remove_urls(txt):
+def remove_urls(txt: str) -> str:
     """
     Remove URLs starting with http, https, www, or even schema-relative links
     from the given text.
     """
     pattern = r'https?://\S+|www\.\S+'
-    return re.sub(pattern, '', txt).strip()
 
+    return re.sub(pattern, '', txt).strip()
 
 
 if  __name__ == '__main__':

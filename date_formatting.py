@@ -4,12 +4,13 @@ This module provides a utility to reformat dates in text.
 import re
 
 
-def reformat_date(txt):
+def reformat_date(txt: str) -> str:
     """
     Change date format from DD/MM/YYYY to YYYY-MM-DD.
     Uses capture groups to rearrange day, month, and year segments.
     """
     pattern = r'\b(\d{2})/(\d{2})/(\d{4})\b'
+
     return re.sub(pattern, r'\3-\2-\1', txt)
 
 

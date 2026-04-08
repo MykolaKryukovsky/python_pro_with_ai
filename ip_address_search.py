@@ -4,7 +4,7 @@ This module provides a utility to extract valid IPv4 addresses from text.
 import re
 
 
-def find_ipv4_addresses(txt):
+def find_ipv4_addresses(txt: str) -> list:
     """
     Extract all valid IPv4 addresses from the given text.
     The function finds sequences of four numbers separated by dots

@@ -1,0 +1,110 @@
+[
+    {
+        "_id": {
+            "$oid": "69e0c78d2453d57acfaf05e7"
+        },
+        "order_number": 1,
+        "customer": "Sylvester",
+        "products": [
+            {
+                "name": "Smart watch",
+                "quantity": 1,
+                "price_at_purchase": 12000
+            }
+        ],
+        "total_sum": 12000,
+        "order_date": {
+            "$date": "2026-04-16T14:27:09.621Z"
+        }
+    },
+    {
+        "_id": {
+            "$oid": "69e0c8777e61a11f2bbcd472"
+        },
+        "order_number": 2,
+        "customer": "Sylvester",
+        "products": [
+            {
+                "name": "Smart watch",
+                "quantity": 1,
+                "price_at_purchase": 12000
+            }
+        ],
+        "total_sum": 12000,
+        "order_date": {
+            "$date": "2026-04-16T14:31:03.284Z"
+        }
+    },
+    {
+        "_id": {
+            "$oid": "69e0cb4c3d601a7bc421c319"
+        },
+        "order_number": 3,
+        "customer": "Sylvester",
+        "products": [
+            {
+                "name": "Smart watch",
+                "quantity": 1,
+                "price_at_purchase": 12000
+            }
+        ],
+        "total_sum": 12000,
+        "order_date": {
+            "$date": "2026-04-16T14:43:08.759Z"
+        }
+    },
+    {
+        "_id": {
+            "$oid": "69e4a9f4967045997d613505"
+        },
+        "order_number": 4,
+        "customer": "Sylvester",
+        "products": [
+            {
+                "name": "Smart watch",
+                "quantity": 1,
+                "price_at_purchase": 12000
+            }
+        ],
+        "total_sum": 12000.0,
+        "order_date": {
+            "$date": "2026-04-19T13:09:56.062Z"
+        }
+    },
+    {
+        "_id": {
+            "$oid": "69e4b7929c4d10c4a5951472"
+        },
+        "order_number": 5,
+        "customer": "Sylvester",
+        "products": [
+            {
+                "name": "Smart watch",
+                "quantity": 1,
+                "price_at_purchase": 12000
+            }
+        ],
+        "total_sum": 12000.0,
+        "order_date": {
+            "$date": "2026-04-19T14:08:02.699Z"
+        }
+    },
+    {
+        "_id": {
+            "$oid": "69e4b833ff51fa697a74f600"
+        },
+        "order_number": 6,
+        "customer": "Sylvester",
+        "products": [
+            {
+                "name": "Smart watch",
+                "quantity": 1,
+                "price_at_purchase": 12000
+            }
+        ],
+        "total_sum": 12000.0,
+        "order_date": {
+            "$date": "2026-04-19T14:10:43.704Z"
+        }
+    }
+]

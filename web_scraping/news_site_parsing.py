@@ -6,7 +6,6 @@ from datetime import datetime, timedelta
 
 import aiohttp
 import pandas as pd
-import requests
 from bs4 import BeautifulSoup
 
 
